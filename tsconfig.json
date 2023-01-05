@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES2020",
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "lib": ["ES2020"],
+        "declaration": true,
+        "sourceMap": true,
+        "composite": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "paths": {
+            "@daramo/*": ["./packages/*/src/index.ts"]
+        }
+    },
+    "references": [
+        {
+            "path": "./packages/core/"
+        }
+    ],
+    "exclude": ["**/dist", "**/node_modules", "**/src/__tests__", "*.d.ts"]
+}

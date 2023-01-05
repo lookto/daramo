@@ -1,0 +1,47 @@
+{
+    "private": true,
+    "name": "daramo",
+    "version": "1.0.0",
+    "description": "Display your current Microsoft Teams status and Github activity right at your desk with a small led light.",
+    "scripts": {
+        "build": "tsc -b tsconfig.build.json",
+        "eslint": "eslint src/**/**.{ts,tsx}",
+        "eslint:fix": "eslint src/**/**.{ts,tsx} --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lookto/daramo.git"
+    },
+    "keywords": [
+        "led",
+        "monitor",
+        "activity",
+        "status",
+        "ms",
+        "teams",
+        "teams",
+        "github",
+        "team"
+    ],
+    "author": "Lukas Tüllmann",
+    "license": "GPL-3.0-only",
+    "bugs": {
+        "url": "https://github.com/lookto/daramo/issues"
+    },
+    "homepage": "https://github.com/lookto/daramo#readme",
+    "workspaces": [
+        "./packages/*"
+    ],
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.48.0",
+        "@typescript-eslint/parser": "^5.48.0",
+        "eslint": "^8.31.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.4"
+    }
+}
